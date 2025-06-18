@@ -1,10 +1,19 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" ng-app="appLucca">
 <head>
   <meta charset="UTF-8">
   <title>Index</title>
 </head>
     <body>
-        <a href="/views/carro/carro.html">Cadastro de carros</a>
+        <div ng-controller="appLuccaCtrl">
+          <label for="nomeLabel">Escreva seu nome: </label>
+          <br>
+          <input type="text" ng-model="nome">
+          <br>
+          <br>
+          <h1>Nome digitado: {{ nome }}</h1>
+        </div>
     </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.6/angular.min.js"></script>
+    <script src="app.js"></script>
 </html>
